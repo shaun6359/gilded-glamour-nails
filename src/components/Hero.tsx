@@ -21,7 +21,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center max-w-3xl">
         <h1 className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold mb-4 gold-gradient animate-fade-in">
-          GILDED GLAMOUR NAILS
+          POLISH ME PRETTY
         </h1>
         <p className="text-xl md:text-2xl font-light mb-8 text-gray-300 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           Elevate your style with luxurious, custom nail designs

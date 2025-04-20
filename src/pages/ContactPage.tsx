@@ -1,4 +1,3 @@
-
 import { Instagram, ArrowRight } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 
@@ -34,6 +33,7 @@ const ContactPage = () => {
               </p>
               
               <div className="space-y-8">
+                {/* Booking Process */}
                 <div className="bg-[#0a0a0a] p-6 rounded-lg border border-gold/20">
                   <h3 className="text-xl font-montserrat font-medium mb-3 text-gold">Booking Process</h3>
                   <ol className="space-y-3 text-gray-300 list-decimal pl-5">
@@ -44,11 +44,12 @@ const ContactPage = () => {
                   </ol>
                 </div>
                 
+                {/* Connect With Us */}
                 <div>
                   <h3 className="text-xl font-montserrat font-medium mb-4 text-gold">Connect With Us</h3>
                   <div className="flex flex-col space-y-4">
                     <a 
-                      href="https://instagram.com" 
+                      href="https://www.instagram.com/polishmepretty007/?utm_source=qr" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center space-x-3 text-gray-400 hover:text-gold transition-colors group"
@@ -56,23 +57,22 @@ const ContactPage = () => {
                       <div className="bg-gold/10 p-2.5 rounded-full">
                         <Instagram size={20} className="text-gold" />
                       </div>
-                      <span className="group-hover:underline">@gilded_glamour_nails</span>
+                      <span className="group-hover:underline">@polishmepretty007</span>
                       <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
                     
                     <a 
-                      href="https://tiktok.com" 
+                      href="https://www.tiktok.com/@polishmepretty007" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center space-x-3 text-gray-400 hover:text-gold transition-colors group"
                     >
                       <div className="bg-gold/10 p-2.5 rounded-full">
-                        {/* TikTok icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gold">
                           <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
                         </svg>
                       </div>
-                      <span className="group-hover:underline">@gildedglamournails</span>
+                      <span className="group-hover:underline">@polishmepretty007</span>
                       <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
                   </div>

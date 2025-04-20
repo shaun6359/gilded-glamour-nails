@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import { Button } from "@/components/ui/button";
@@ -31,15 +30,15 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img
-                src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop"
                 alt="Nail Artist at Work"
                 className="rounded-lg shadow-lg border border-gold/20"
               />
             </div>
             <div className="md:w-1/2">
-              <h2 className="section-title">About Gilded Glamour</h2>
+              <h2 className="section-title">About Polish Me Pretty</h2>
               <p className="mt-6 text-gray-400 leading-relaxed">
-                Gilded Glamour Nails was founded with a passion for creativity and a dedication to quality. Our mission is to transform your nails into wearable art that expresses your unique personality and style.
+                Polish Me Pretty was founded with a passion for creativity and a dedication to quality. Our mission is to transform your nails into wearable art that expresses your unique personality and style.
               </p>
               <p className="mt-4 text-gray-400 leading-relaxed">
                 Each design is meticulously crafted with premium products and attention to detail. Whether you're looking for elegant acrylics, long-lasting biogel, or custom press-ons to wear at home, we're committed to delivering nail designs that make you feel confident and beautiful.
