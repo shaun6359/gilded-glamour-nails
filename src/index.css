@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 5%;
     --popover-foreground: 45 54% 98%;
 
-    --primary: 45 54% 52%;
+    --primary: 45 30% 75%;
     --primary-foreground: 0 0% 0%;
 
     --secondary: 0 0% 15%;
@@ -22,26 +23,26 @@
     --muted: 0 0% 15%;
     --muted-foreground: 45 39% 80%;
 
-    --accent: 45 54% 52%;
+    --accent: 45 30% 75%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 45 54% 98%;
 
-    --border: 45 54% 52%;
-    --input: 45 54% 52%;
-    --ring: 45 54% 52%;
+    --border: 45 30% 75%;
+    --input: 45 30% 75%;
+    --ring: 45 30% 75%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 0%;
     --sidebar-foreground: 45 54% 98%;
-    --sidebar-primary: 45 54% 52%;
+    --sidebar-primary: 45 30% 75%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 0 0% 15%;
     --sidebar-accent-foreground: 45 54% 98%;
-    --sidebar-border: 45 54% 52%;
-    --sidebar-ring: 45 54% 52%;
+    --sidebar-border: 45 30% 75%;
+    --sidebar-ring: 45 30% 75%;
   }
 }
 
@@ -61,23 +62,23 @@
 
 @layer components {
   .gold-border {
-    @apply border-[#d8b74b] border-[1px];
+    @apply border-[#dacaa4] border-[1px];
   }
   
   .gold-glow {
-    @apply shadow-[0_0_10px_rgba(216,183,75,0.5)];
+    @apply shadow-[0_0_10px_rgba(218,202,164,0.5)];
   }
   
   .nav-link {
-    @apply relative text-foreground font-montserrat text-sm uppercase tracking-wider hover:text-gold transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-gold after:bottom-[-2px] after:left-0 after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative text-foreground font-montserrat text-sm uppercase tracking-wider hover:text-[#dacaa4] transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#dacaa4] after:bottom-[-2px] after:left-0 after:transition-all after:duration-300 hover:after:w-full;
   }
 
   .nav-link-active {
-    @apply text-gold after:w-full;
+    @apply text-[#dacaa4] after:w-full;
   }
   
   .gold-gradient {
-    @apply bg-gradient-to-r from-[#ba9d41] via-[#d8b74b] to-[#e6c968] text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-[#dacaa4] via-[#dacaa4] to-[#dacaa4] text-transparent bg-clip-text;
   }
   
   .gallery-item {
@@ -97,11 +98,11 @@
   }
   
   .btn-primary {
-    @apply bg-gold text-black hover:bg-gold-light hover:shadow-md;
+    @apply bg-[#dacaa4] text-black hover:bg-[#dacaa4] hover:shadow-md;
   }
   
   .btn-outline {
-    @apply bg-transparent border border-gold text-gold hover:bg-gold/10 hover:shadow-md;
+    @apply bg-transparent border border-[#dacaa4] text-[#dacaa4] hover:bg-[#dacaa4]/10 hover:shadow-md;
   }
   
   .section-title {
@@ -110,6 +111,6 @@
   
   .section-title::after {
     content: '';
-    @apply absolute -bottom-2 left-1/4 right-1/4 h-[2px] bg-gold;
+    @apply absolute -bottom-2 left-1/4 right-1/4 h-[2px] bg-[#dacaa4];
   }
 }

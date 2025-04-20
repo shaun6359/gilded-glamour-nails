@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -110,10 +111,10 @@ export default {
                 },
                 'glow': {
                     '0%, 100%': {
-                        boxShadow: '0 0 5px rgba(212, 175, 55, 0.5)'
+                        boxShadow: '0 0 5px rgba(218, 202, 164, 0.5)'
                     },
                     '50%': {
-                        boxShadow: '0 0 20px rgba(212, 175, 55, 0.8)'
+                        boxShadow: '0 0 20px rgba(218, 202, 164, 0.8)'
                     }
                 }
             },
@@ -128,3 +129,4 @@ export default {
     },
     plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
