@@ -9,63 +9,63 @@ const acrylicsGallery = [
     image: "https://images.unsplash.com/photo-1612022346090-d8e185fb1d58?q=80&w=2067&auto=format&fit=crop",
     title: "Crystal Clear",
     tags: ["Clear", "Long", "Modern"],
-    aspectRatio: "landscape"
+    aspectRatio: "landscape" as const
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop",
     title: "Blue Ocean",
     tags: ["Blue", "Medium", "Gradient"],
-    aspectRatio: "portrait"
+    aspectRatio: "portrait" as const
   },
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1975&auto=format&fit=crop",
     title: "French XL",
     tags: ["French", "XL", "Classic"],
-    aspectRatio: "square"
+    aspectRatio: "square" as const
   },
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1583255448430-17c5eda08e5c?q=80&w=2070&auto=format&fit=crop",
     title: "Glossy Red",
     tags: ["Red", "Almond", "Glossy"],
-    aspectRatio: "landscape"
+    aspectRatio: "landscape" as const
   },
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1599206676215-d1b228631535?q=80&w=1974&auto=format&fit=crop",
     title: "Marble & Gold",
     tags: ["Marble", "Gold", "Long"],
-    aspectRatio: "portrait"
+    aspectRatio: "portrait" as const
   },
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?q=80&w=2070&auto=format&fit=crop",
     title: "Classic Burgundy",
     tags: ["Burgundy", "Medium", "Elegant"],
-    aspectRatio: "square"
+    aspectRatio: "square" as const
   },
   {
     id: 7,
     image: "https://images.unsplash.com/photo-1604902369280-1a77244f68a3?q=80&w=1974&auto=format&fit=crop",
     title: "Stiletto Black",
     tags: ["Black", "Stiletto", "Edgy"],
-    aspectRatio: "portrait"
+    aspectRatio: "portrait" as const
   },
   {
     id: 8,
     image: "https://images.unsplash.com/photo-1625165647283-bbd923e7c652?q=80&w=2070&auto=format&fit=crop",
     title: "Ombré Fantasy",
     tags: ["Ombré", "Long", "Statement"],
-    aspectRatio: "landscape"
+    aspectRatio: "landscape" as const
   },
   {
     id: 9,
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop",
     title: "Crystal Accents",
     tags: ["Crystals", "XL", "Luxury"],
-    aspectRatio: "square"
+    aspectRatio: "square" as const
   }
 ];
 

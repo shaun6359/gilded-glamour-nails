@@ -9,63 +9,63 @@ const biogelGallery = [
     image: "https://images.unsplash.com/photo-1625165647283-bbd923e7c652?q=80&w=2070&auto=format&fit=crop",
     title: "Natural Pink",
     tags: ["Pink", "Natural", "Short"],
-    aspectRatio: "portrait"
+    aspectRatio: "portrait" as const
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1604902369280-1a77244f68a3?q=80&w=1974&auto=format&fit=crop",
     title: "Glossy White",
     tags: ["White", "Glossy", "Medium"],
-    aspectRatio: "landscape"
+    aspectRatio: "landscape" as const
   },
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop",
     title: "Baby Blue",
     tags: ["Blue", "Pastel", "Medium"],
-    aspectRatio: "square"
+    aspectRatio: "square" as const
   },
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1975&auto=format&fit=crop",
     title: "French Twist",
     tags: ["French", "Classic", "Short"],
-    aspectRatio: "landscape"
+    aspectRatio: "landscape" as const
   },
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1599206676215-d1b228631535?q=80&w=1974&auto=format&fit=crop",
     title: "Subtle Shimmer",
     tags: ["Shimmer", "Elegant", "Neutral"],
-    aspectRatio: "portrait"
+    aspectRatio: "portrait" as const
   },
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1583255448430-17c5eda08e5c?q=80&w=2070&auto=format&fit=crop",
     title: "Nude Perfection",
     tags: ["Nude", "Minimalist", "Professional"],
-    aspectRatio: "square"
+    aspectRatio: "square" as const
   },
   {
     id: 7,
     image: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop",
     title: "Dusty Rose",
     tags: ["Rose", "Medium", "Matte"],
-    aspectRatio: "portrait"
+    aspectRatio: "portrait" as const
   },
   {
     id: 8,
     image: "https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?q=80&w=2070&auto=format&fit=crop",
     title: "Soft Lavender",
     tags: ["Lavender", "Short", "Pastel"],
-    aspectRatio: "landscape"
+    aspectRatio: "landscape" as const
   },
   {
     id: 9,
     image: "https://images.unsplash.com/photo-1612022346090-d8e185fb1d58?q=80&w=2067&auto=format&fit=crop",
     title: "Clear Builder",
     tags: ["Clear", "Natural", "Strengthening"],
-    aspectRatio: "square"
+    aspectRatio: "square" as const
   }
 ];
 

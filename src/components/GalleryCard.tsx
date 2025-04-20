@@ -24,7 +24,7 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ item }) => {
       case "landscape":
         return 16/9;
       default:
-        return 1;
+        return 1; // square is the default
     }
   };
 
