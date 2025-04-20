@@ -1,20 +1,21 @@
-
 import { useEffect, useState } from "react";
 import GalleryCard from "../components/GalleryCard";
 
-// Gallery data
+// Gallery data with aspect ratios
 const pressOnsGallery = [
   {
     id: 1,
     image: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop",
     title: "Classic French Tips",
-    tags: ["French", "Short", "Elegant"]
+    tags: ["French", "Short", "Elegant"],
+    aspectRatio: "portrait"
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1636018942549-d84835d0b2fc?q=80&w=2071&auto=format&fit=crop",
     title: "Gold Glitter Accent",
-    tags: ["Glitter", "Medium", "Statement"]
+    tags: ["Glitter", "Medium", "Statement"],
+    aspectRatio: "landscape"
   },
   {
     id: 3,
@@ -120,9 +121,14 @@ const PressOnsGallery = () => {
         </div>
         
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]">
           {filteredGallery.map((item) => (
-            <GalleryCard key={item.id} item={item} />
+            <div key={item.id} className={`
+              ${item.aspectRatio === 'landscape' ? 'col-span-2' : ''}
+              ${item.aspectRatio === 'portrait' ? 'row-span-2' : ''}
+            `}>
+              <GalleryCard item={item} />
+            </div>
           ))}
         </div>
         

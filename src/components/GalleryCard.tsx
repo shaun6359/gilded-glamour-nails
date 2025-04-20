@@ -1,11 +1,13 @@
 
 import { useState } from "react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 type GalleryItem = {
   id: number;
   image: string;
   title: string;
   tags: string[];
+  aspectRatio?: "square" | "portrait" | "landscape";
 };
 
 interface GalleryCardProps {
@@ -15,30 +17,43 @@ interface GalleryCardProps {
 const GalleryCard: React.FC<GalleryCardProps> = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  const getAspectRatio = (type?: string) => {
+    switch (type) {
+      case "portrait":
+        return 3/4;
+      case "landscape":
+        return 16/9;
+      default:
+        return 1;
+    }
+  };
+
   return (
     <div 
-      className="gallery-item aspect-square"
+      className="gallery-item h-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img 
-        src={item.image} 
-        alt={item.title}
-        className="w-full h-full object-cover"
-      />
-      <div className={`gallery-item-overlay ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-        <h3 className="text-white font-montserrat text-lg font-medium mb-1">{item.title}</h3>
-        <div className="flex flex-wrap gap-1">
-          {item.tags.map((tag, index) => (
-            <span 
-              key={index}
-              className="text-xs bg-gold/20 text-gold px-2 py-0.5 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
+      <AspectRatio ratio={getAspectRatio(item.aspectRatio)}>
+        <img 
+          src={item.image} 
+          alt={item.title}
+          className="w-full h-full object-cover"
+        />
+        <div className={`gallery-item-overlay ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+          <h3 className="text-white font-montserrat text-lg font-medium mb-1">{item.title}</h3>
+          <div className="flex flex-wrap gap-1">
+            {item.tags.map((tag, index) => (
+              <span 
+                key={index}
+                className="text-xs bg-[#d8b74b]/20 text-[#d8b74b] px-2 py-0.5 rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
+      </AspectRatio>
     </div>
   );
 };

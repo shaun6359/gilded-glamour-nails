@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -46,9 +45,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
-          <span className="text-2xl font-bold font-montserrat tracking-wider gold-gradient">
-            GILDED GLAMOUR
-          </span>
+          <img 
+            src="/lovable-uploads/373d1555-07f0-4a76-9a36-233a03cba102.png" 
+            alt="Polish Me Pretty" 
+            className="h-8 mr-2"
+          />
         </Link>
 
         {/* Desktop Navigation */}
