@@ -29,7 +29,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				gold: {
-					DEFAULT: '#d8b74b',
+					DEFAULT: '#e1c773',
 					light: '#e6c968',
 					dark: '#ba9d41',
 				},
