@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import GalleryCard from "../components/GalleryCard";
 
@@ -21,43 +22,50 @@ const pressOnsGallery = [
     id: 3,
     image: "https://images.unsplash.com/photo-1599206676215-d1b228631535?q=80&w=1974&auto=format&fit=crop",
     title: "Pink Marble",
-    tags: ["Marble", "Long", "Trendy"]
+    tags: ["Marble", "Long", "Trendy"],
+    aspectRatio: "square"
   },
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1604902369280-1a77244f68a3?q=80&w=1974&auto=format&fit=crop",
     title: "Matte Black",
-    tags: ["Matte", "Medium", "Bold"]
+    tags: ["Matte", "Medium", "Bold"],
+    aspectRatio: "landscape"
   },
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1583255448430-17c5eda08e5c?q=80&w=2070&auto=format&fit=crop",
     title: "Rose Gold Foil",
-    tags: ["Foil", "Medium", "Luxury"]
+    tags: ["Foil", "Medium", "Luxury"],
+    aspectRatio: "portrait"
   },
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop",
     title: "White Minimalist",
-    tags: ["Minimalist", "Short", "Clean"]
+    tags: ["Minimalist", "Short", "Clean"],
+    aspectRatio: "square"
   },
   {
     id: 7,
     image: "https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?q=80&w=2070&auto=format&fit=crop",
     title: "Red Classic",
-    tags: ["Red", "Long", "Timeless"]
+    tags: ["Red", "Long", "Timeless"],
+    aspectRatio: "portrait"
   },
   {
     id: 8,
     image: "https://images.unsplash.com/photo-1625165647283-bbd923e7c652?q=80&w=2070&auto=format&fit=crop",
     title: "Pastel Dreams",
-    tags: ["Pastel", "Medium", "Subtle"]
+    tags: ["Pastel", "Medium", "Subtle"],
+    aspectRatio: "landscape"
   },
   {
     id: 9,
     image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1975&auto=format&fit=crop",
     title: "Nude Elegance",
-    tags: ["Nude", "Almond", "Sophisticated"]
+    tags: ["Nude", "Almond", "Sophisticated"],
+    aspectRatio: "square"
   }
 ];
 
@@ -121,11 +129,12 @@ const PressOnsGallery = () => {
         </div>
         
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]">
+        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-4 auto-rows-[minmax(100px,auto)]">
           {filteredGallery.map((item) => (
             <div key={item.id} className={`
               ${item.aspectRatio === 'landscape' ? 'col-span-2' : ''}
               ${item.aspectRatio === 'portrait' ? 'row-span-2' : ''}
+              ${item.aspectRatio === 'square' && filteredGallery.indexOf(item) % 4 === 0 ? 'col-span-2 row-span-2' : ''}
             `}>
               <GalleryCard item={item} />
             </div>

@@ -2,61 +2,70 @@
 import { useEffect, useState } from "react";
 import GalleryCard from "../components/GalleryCard";
 
-// Gallery data
+// Gallery data with aspect ratios
 const biogelGallery = [
   {
     id: 1,
     image: "https://images.unsplash.com/photo-1625165647283-bbd923e7c652?q=80&w=2070&auto=format&fit=crop",
     title: "Natural Pink",
-    tags: ["Pink", "Natural", "Short"]
+    tags: ["Pink", "Natural", "Short"],
+    aspectRatio: "portrait"
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1604902369280-1a77244f68a3?q=80&w=1974&auto=format&fit=crop",
     title: "Glossy White",
-    tags: ["White", "Glossy", "Medium"]
+    tags: ["White", "Glossy", "Medium"],
+    aspectRatio: "landscape"
   },
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop",
     title: "Baby Blue",
-    tags: ["Blue", "Pastel", "Medium"]
+    tags: ["Blue", "Pastel", "Medium"],
+    aspectRatio: "square"
   },
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1975&auto=format&fit=crop",
     title: "French Twist",
-    tags: ["French", "Classic", "Short"]
+    tags: ["French", "Classic", "Short"],
+    aspectRatio: "landscape"
   },
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1599206676215-d1b228631535?q=80&w=1974&auto=format&fit=crop",
     title: "Subtle Shimmer",
-    tags: ["Shimmer", "Elegant", "Neutral"]
+    tags: ["Shimmer", "Elegant", "Neutral"],
+    aspectRatio: "portrait"
   },
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1583255448430-17c5eda08e5c?q=80&w=2070&auto=format&fit=crop",
     title: "Nude Perfection",
-    tags: ["Nude", "Minimalist", "Professional"]
+    tags: ["Nude", "Minimalist", "Professional"],
+    aspectRatio: "square"
   },
   {
     id: 7,
     image: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop",
     title: "Dusty Rose",
-    tags: ["Rose", "Medium", "Matte"]
+    tags: ["Rose", "Medium", "Matte"],
+    aspectRatio: "portrait"
   },
   {
     id: 8,
     image: "https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?q=80&w=2070&auto=format&fit=crop",
     title: "Soft Lavender",
-    tags: ["Lavender", "Short", "Pastel"]
+    tags: ["Lavender", "Short", "Pastel"],
+    aspectRatio: "landscape"
   },
   {
     id: 9,
     image: "https://images.unsplash.com/photo-1612022346090-d8e185fb1d58?q=80&w=2067&auto=format&fit=crop",
     title: "Clear Builder",
-    tags: ["Clear", "Natural", "Strengthening"]
+    tags: ["Clear", "Natural", "Strengthening"],
+    aspectRatio: "square"
   }
 ];
 
@@ -120,9 +129,15 @@ const BiogelGallery = () => {
         </div>
         
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-4 auto-rows-[minmax(100px,auto)]">
           {filteredGallery.map((item) => (
-            <GalleryCard key={item.id} item={item} />
+            <div key={item.id} className={`
+              ${item.aspectRatio === 'landscape' ? 'col-span-2' : ''}
+              ${item.aspectRatio === 'portrait' ? 'row-span-2' : ''}
+              ${item.aspectRatio === 'square' && filteredGallery.indexOf(item) % 3 === 0 ? 'col-span-2 row-span-2' : ''}
+            `}>
+              <GalleryCard item={item} />
+            </div>
           ))}
         </div>
         

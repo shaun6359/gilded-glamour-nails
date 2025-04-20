@@ -17,7 +17,7 @@ interface GalleryCardProps {
 const GalleryCard: React.FC<GalleryCardProps> = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const getAspectRatio = (type?: string) => {
+  const getAspectRatio = (type?: "square" | "portrait" | "landscape") => {
     switch (type) {
       case "portrait":
         return 3/4;
@@ -30,7 +30,7 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ item }) => {
 
   return (
     <div 
-      className="gallery-item h-full"
+      className="gallery-item h-full rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-gold/20"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -38,9 +38,9 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ item }) => {
         <img 
           src={item.image} 
           alt={item.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-700"
         />
-        <div className={`gallery-item-overlay ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`gallery-item-overlay absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-black/80 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <h3 className="text-white font-montserrat text-lg font-medium mb-1">{item.title}</h3>
           <div className="flex flex-wrap gap-1">
             {item.tags.map((tag, index) => (
