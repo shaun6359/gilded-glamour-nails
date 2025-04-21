@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -30,9 +29,9 @@ export default {
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',
                 gold: {
-                    DEFAULT: '#dacaa4',
-                    light: '#dacaa4',
-                    dark: '#dacaa4',
+                    DEFAULT: '#d1bb91',
+                    light: '#d1bb91',
+                    dark: '#d1bb91',
                 },
                 primary: {
                     DEFAULT: 'hsl(var(--primary))',
@@ -111,10 +110,10 @@ export default {
                 },
                 'glow': {
                     '0%, 100%': {
-                        boxShadow: '0 0 5px rgba(218, 202, 164, 0.5)'
+                        boxShadow: '0 0 5px rgba(209, 187, 145, 0.5)'
                     },
                     '50%': {
-                        boxShadow: '0 0 20px rgba(218, 202, 164, 0.8)'
+                        boxShadow: '0 0 20px rgba(209, 187, 145, 0.8)'
                     }
                 }
             },
@@ -129,4 +128,3 @@ export default {
     },
     plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
