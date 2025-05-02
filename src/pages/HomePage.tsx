@@ -64,19 +64,19 @@ const HomePage = () => {
             <ServiceCard
               title="Press Ons"
               description="Custom designed press-on nails for an instant, salon-quality manicure at home."
-              image="public/lovable-uploads/afa4fc3a-4fab-4213-a192-be1f25989429.png"
+              image="lovable-uploads/afa4fc3a-4fab-4213-a192-be1f25989429.png"
               link="/gallery/press-ons"
             />
             <ServiceCard
               title="Acrylics"
               description="Durable and versatile acrylic enhancements for a perfect, long-lasting manicure."
-              image="public/lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png"
+              image="lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png"
               link="/gallery/acrylics"
             />
             <ServiceCard
               title="Biogel"
               description="Gentle on your natural nails with a glossy finish that lasts for weeks."
-              image="public/lovable-uploads/939ace81-db72-4834-bd5e-84cb550471ef.png"
+              image="lovable-uploads/939ace81-db72-4834-bd5e-84cb550471ef.png"
               link="/gallery/biogel"
             />
           </div>
@@ -92,10 +92,10 @@ const HomePage = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="public/lovable-uploads/7b2dc5da-6439-495d-8c65-628ce8bfcb11.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="public/lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="public/lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="public/lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="lovable-uploads/7b2dc5da-6439-495d-8c65-628ce8bfcb11.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
           </div>
           
           <div className="text-center mt-12">
