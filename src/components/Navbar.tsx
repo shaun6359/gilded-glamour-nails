@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -61,46 +62,12 @@ const Navbar = () => {
             Home
           </Link>
 
-          <DropdownMenu>
-            <DropdownMenuTrigger className={`nav-link ${
-              isActive("/gallery/press-ons") || 
-              isActive("/gallery/acrylics") || 
-              isActive("/gallery/biogel") 
-                ? "nav-link-active" 
-                : ""
-            }`}>
-              Gallery
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <Link
-                  to="/gallery/press-ons"
-                  className="w-full"
-                  onClick={closeMobileMenu}
-                >
-                  Press Ons
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  to="/gallery/acrylics"
-                  className="w-full"
-                  onClick={closeMobileMenu}
-                >
-                  Acrylics
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  to="/gallery/biogel"
-                  className="w-full"
-                  onClick={closeMobileMenu}
-                >
-                  Biogel
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Link
+            to="/gallery"
+            className={`nav-link ${isActive("/gallery") ? "nav-link-active" : ""}`}
+          >
+            Gallery
+          </Link>
 
           <Link
             to="/pricing"
@@ -138,32 +105,13 @@ const Navbar = () => {
               Home
             </Link>
             
-            <div className="relative py-2">
-              <p className="nav-link text-center mb-2">Gallery</p>
-              <div className="flex flex-col space-y-2 bg-secondary/50 py-2 rounded-md">
-                <Link
-                  to="/gallery/press-ons"
-                  className="text-sm py-1 hover:text-gold transition-colors"
-                  onClick={closeMobileMenu}
-                >
-                  Press Ons
-                </Link>
-                <Link
-                  to="/gallery/acrylics"
-                  className="text-sm py-1 hover:text-gold transition-colors"
-                  onClick={closeMobileMenu}
-                >
-                  Acrylics
-                </Link>
-                <Link
-                  to="/gallery/biogel"
-                  className="text-sm py-1 hover:text-gold transition-colors"
-                  onClick={closeMobileMenu}
-                >
-                  Biogel
-                </Link>
-              </div>
-            </div>
+            <Link
+              to="/gallery"
+              className={`nav-link text-center py-2 ${isActive("/gallery") ? "nav-link-active" : ""}`}
+              onClick={closeMobileMenu}
+            >
+              Gallery
+            </Link>
             
             <Link
               to="/pricing"

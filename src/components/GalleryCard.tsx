@@ -8,6 +8,7 @@ type GalleryItem = {
   title: string;
   tags: string[];
   aspectRatio?: "square" | "portrait" | "landscape";
+  type?: "Press-On" | "Acrylic" | "Biogel";
 };
 
 interface GalleryCardProps {
@@ -41,16 +42,25 @@ const GalleryCard: React.FC<GalleryCardProps> = ({ item }) => {
           className="w-full h-full object-cover transition-transform duration-700"
         />
         <div className={`gallery-item-overlay absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-black/80 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-          <h3 className="text-white font-montserrat text-lg font-medium mb-1">{item.title}</h3>
-          <div className="flex flex-wrap gap-1">
-            {item.tags.map((tag, index) => (
-              <span 
-                key={index}
-                className="text-xs bg-[#d8b74b]/20 text-[#d8b74b] px-2 py-0.5 rounded-full"
-              >
-                {tag}
+          <div className="flex justify-between items-end mb-1">
+            <h3 className="text-white font-montserrat text-lg font-medium">{item.title}</h3>
+            {item.type && (
+              <span className="text-xs bg-[#d1bb91] text-black px-2 py-0.5 rounded-full">
+                {item.type}
               </span>
-            ))}
+            )}
+          </div>
+          <div className="flex flex-wrap gap-1">
+            {item.tags
+              .filter(tag => tag !== item.type)
+              .map((tag, index) => (
+                <span 
+                  key={index}
+                  className="text-xs bg-[#d1bb91]/20 text-[#d1bb91] px-2 py-0.5 rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
           </div>
         </div>
       </AspectRatio>

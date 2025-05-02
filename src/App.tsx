@@ -9,9 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import HomePage from "./pages/HomePage";
-import PressOnsGallery from "./pages/PressOnsGallery";
-import AcrylicsGallery from "./pages/AcrylicsGallery";
-import BiogelGallery from "./pages/BiogelGallery";
+import GalleryPage from "./pages/GalleryPage";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
@@ -29,9 +27,7 @@ const App = () => (
           <main className="flex-grow pt-16">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/gallery/press-ons" element={<PressOnsGallery />} />
-              <Route path="/gallery/acrylics" element={<AcrylicsGallery />} />
-              <Route path="/gallery/biogel" element={<BiogelGallery />} />
+              <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/pricing" element={<PricingPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="*" element={<NotFound />} />
