@@ -28,7 +28,7 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <Button size="lg" asChild>
-            <Link to="/gallery/press-ons">
+            <Link to="/gallery">
               View Gallery
             </Link>
           </Button>
