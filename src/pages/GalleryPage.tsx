@@ -1,8 +1,7 @@
 
-import { useState } from "react";
 import GalleryCard from "../components/GalleryCard";
 
-// Gallery items with the uploaded images
+// Gallery items with all the uploaded images
 const galleryItems = [
   {
     id: 1,
@@ -120,6 +119,135 @@ const galleryItems = [
     id: 15,
     image: "public/lovable-uploads/19ed0f98-4a28-4653-9db8-0cdbd215d5b3.png",
     title: "Pastel Blue with Pearls",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  // New images
+  {
+    id: 16,
+    image: "public/lovable-uploads/758ef8ba-520d-4ece-8ce7-ce96fd982df4.png",
+    title: "Natural French Tips",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 17,
+    image: "public/lovable-uploads/6ff2ceda-d0af-42c3-ad8f-77451923ca4e.png",
+    title: "White Square Acrylics",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Acrylic" as const
+  },
+  {
+    id: 18,
+    image: "public/lovable-uploads/2ee82d95-7452-4b8d-97c8-0771f97f3a36.png",
+    title: "Pink French Tips",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 19,
+    image: "public/lovable-uploads/ab8ed59d-82da-4fc0-815d-63e039ede089.png",
+    title: "Red & Black Designer Set",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Acrylic" as const
+  },
+  {
+    id: 20,
+    image: "public/lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png",
+    title: "Red French Tips",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 21,
+    image: "public/lovable-uploads/24eff33b-c5d9-43d9-b649-ed1e50b684e7.png",
+    title: "Green French Tips",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 22,
+    image: "public/lovable-uploads/5f3823a9-b8cb-495d-93dc-d9ab48600271.png",
+    title: "Black & Silver Bow Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 23,
+    image: "public/lovable-uploads/fb1780d4-fab8-42d7-a914-82c428b8dc94.png",
+    title: "Luxury Gold & Black Set",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Acrylic" as const
+  },
+  {
+    id: 24,
+    image: "public/lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png",
+    title: "Yellow Tips with Pearls",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 25,
+    image: "public/lovable-uploads/52077b51-5170-435c-b22a-a9e06be8409f.png",
+    title: "Orange French Tips",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 26,
+    image: "public/lovable-uploads/2a5f685f-6134-4b2d-8362-01c0c7f0a6c4.png",
+    title: "White with Cannabis Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 27,
+    image: "public/lovable-uploads/a6ed1bfd-0848-4be9-b8dd-eb651e7be5fc.png",
+    title: "Blue French Tips",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 28,
+    image: "public/lovable-uploads/d3dcf1cd-2f40-41da-b626-04f22f196bac.png",
+    title: "Jade Green Marble Effect",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Acrylic" as const
+  },
+  {
+    id: 29,
+    image: "public/lovable-uploads/dfc9381f-8ed4-4b0c-a046-24b2f6445075.png",
+    title: "Red Flower Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 30,
+    image: "public/lovable-uploads/697c2fb4-52f6-486a-b9fb-e082c7192761.png",
+    title: "Colorful Summer Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  },
+  {
+    id: 31,
+    image: "public/lovable-uploads/cb3e1310-baf4-46ed-b401-ff2bb96bde5e.png",
+    title: "Almond-Shaped Pink Nails",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
