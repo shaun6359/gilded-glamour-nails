@@ -34,6 +34,7 @@ const HomePage = () => {
                 src="lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png"
                 alt="Nail Artist at Work"
                 className="rounded-lg shadow-lg border border-gold/20"
+                style={{ width: '200px' }}
               />
             </div>
             <div className="md:w-1/2">
