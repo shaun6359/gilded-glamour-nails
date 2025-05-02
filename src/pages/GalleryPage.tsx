@@ -5,7 +5,7 @@ import GalleryCard from "../components/GalleryCard";
 const galleryItems = [
   {
     id: 1,
-    image: "public/lovable-uploads/85d06358-eb2c-4c24-8f55-2b5bc9f54adb.png",
+    image: "lovable-uploads/85d06358-eb2c-4c24-8f55-2b5bc9f54adb.png",
     title: "French Tips with Floral Accent",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -13,7 +13,7 @@ const galleryItems = [
   },
   {
     id: 2,
-    image: "public/lovable-uploads/3b01c11d-e101-4258-9e75-2c3d754c0bb1.png",
+    image: "lovable-uploads/3b01c11d-e101-4258-9e75-2c3d754c0bb1.png",
     title: "Pink Square Acrylics",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -21,7 +21,7 @@ const galleryItems = [
   },
   {
     id: 3,
-    image: "public/lovable-uploads/cb8664f8-f2e3-4bab-a22a-c46c375e206d.png",
+    image: "lovable-uploads/cb8664f8-f2e3-4bab-a22a-c46c375e206d.png",
     title: "Green Leaf Design",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -29,7 +29,7 @@ const galleryItems = [
   },
   {
     id: 4,
-    image: "public/lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png",
+    image: "lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png",
     title: "BMW-Inspired Racing Set",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -37,7 +37,7 @@ const galleryItems = [
   },
   {
     id: 5,
-    image: "public/lovable-uploads/1ba09d81-f0e0-41da-afd7-1c9de0b782ef.png",
+    image: "lovable-uploads/1ba09d81-f0e0-41da-afd7-1c9de0b782ef.png",
     title: "Peach French with Stars",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -45,7 +45,7 @@ const galleryItems = [
   },
   {
     id: 6,
-    image: "public/lovable-uploads/bcfdb0b6-131b-484e-99c9-3187a4cee4ca.png",
+    image: "lovable-uploads/bcfdb0b6-131b-484e-99c9-3187a4cee4ca.png",
     title: "Beach French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -53,7 +53,7 @@ const galleryItems = [
   },
   {
     id: 7,
-    image: "public/lovable-uploads/7b2dc5da-6439-495d-8c65-628ce8bfcb11.png",
+    image: "lovable-uploads/7b2dc5da-6439-495d-8c65-628ce8bfcb11.png",
     title: "Minimal French Manicure",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -61,7 +61,7 @@ const galleryItems = [
   },
   {
     id: 8,
-    image: "public/lovable-uploads/0d206aaa-af0c-4d79-92e5-c68f2e26df7c.png",
+    image: "lovable-uploads/0d206aaa-af0c-4d79-92e5-c68f2e26df7c.png",
     title: "Black Flame Design",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -69,7 +69,7 @@ const galleryItems = [
   },
   {
     id: 9,
-    image: "public/lovable-uploads/939ace81-db72-4834-bd5e-84cb550471ef.png",
+    image: "lovable-uploads/939ace81-db72-4834-bd5e-84cb550471ef.png",
     title: "Pink French with Flowers",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -77,7 +77,7 @@ const galleryItems = [
   },
   {
     id: 10,
-    image: "public/lovable-uploads/afa4fc3a-4fab-4213-a192-be1f25989429.png",
+    image: "lovable-uploads/afa4fc3a-4fab-4213-a192-be1f25989429.png",
     title: "Nude and White French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -85,7 +85,7 @@ const galleryItems = [
   },
   {
     id: 11,
-    image: "public/lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png",
+    image: "lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png",
     title: "Pink and Gold Accent",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -93,7 +93,7 @@ const galleryItems = [
   },
   {
     id: 12,
-    image: "public/lovable-uploads/9f9c1a8b-c36d-454f-bfbd-eb025aaab44f.png",
+    image: "lovable-uploads/9f9c1a8b-c36d-454f-bfbd-eb025aaab44f.png",
     title: "Green and Gold Abstract",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -101,7 +101,7 @@ const galleryItems = [
   },
   {
     id: 13,
-    image: "public/lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png",
+    image: "lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png",
     title: "Pastel Green Floral",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -109,7 +109,7 @@ const galleryItems = [
   },
   {
     id: 14,
-    image: "public/lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png",
+    image: "lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png",
     title: "White French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -117,7 +117,7 @@ const galleryItems = [
   },
   {
     id: 15,
-    image: "public/lovable-uploads/19ed0f98-4a28-4653-9db8-0cdbd215d5b3.png",
+    image: "lovable-uploads/19ed0f98-4a28-4653-9db8-0cdbd215d5b3.png",
     title: "Pastel Blue with Pearls",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -126,7 +126,7 @@ const galleryItems = [
   // New images
   {
     id: 16,
-    image: "public/lovable-uploads/758ef8ba-520d-4ece-8ce7-ce96fd982df4.png",
+    image: "lovable-uploads/758ef8ba-520d-4ece-8ce7-ce96fd982df4.png",
     title: "Natural French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -134,7 +134,7 @@ const galleryItems = [
   },
   {
     id: 17,
-    image: "public/lovable-uploads/6ff2ceda-d0af-42c3-ad8f-77451923ca4e.png",
+    image: "lovable-uploads/6ff2ceda-d0af-42c3-ad8f-77451923ca4e.png",
     title: "White Square Acrylics",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -142,7 +142,7 @@ const galleryItems = [
   },
   {
     id: 18,
-    image: "public/lovable-uploads/2ee82d95-7452-4b8d-97c8-0771f97f3a36.png",
+    image: "lovable-uploads/2ee82d95-7452-4b8d-97c8-0771f97f3a36.png",
     title: "Pink French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -150,7 +150,7 @@ const galleryItems = [
   },
   {
     id: 19,
-    image: "public/lovable-uploads/ab8ed59d-82da-4fc0-815d-63e039ede089.png",
+    image: "lovable-uploads/ab8ed59d-82da-4fc0-815d-63e039ede089.png",
     title: "Red & Black Designer Set",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -158,7 +158,7 @@ const galleryItems = [
   },
   {
     id: 20,
-    image: "public/lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png",
+    image: "lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png",
     title: "Red French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -166,7 +166,7 @@ const galleryItems = [
   },
   {
     id: 21,
-    image: "public/lovable-uploads/24eff33b-c5d9-43d9-b649-ed1e50b684e7.png",
+    image: "lovable-uploads/24eff33b-c5d9-43d9-b649-ed1e50b684e7.png",
     title: "Green French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -174,7 +174,7 @@ const galleryItems = [
   },
   {
     id: 22,
-    image: "public/lovable-uploads/5f3823a9-b8cb-495d-93dc-d9ab48600271.png",
+    image: "lovable-uploads/5f3823a9-b8cb-495d-93dc-d9ab48600271.png",
     title: "Black & Silver Bow Design",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -182,7 +182,7 @@ const galleryItems = [
   },
   {
     id: 23,
-    image: "public/lovable-uploads/fb1780d4-fab8-42d7-a914-82c428b8dc94.png",
+    image: "lovable-uploads/fb1780d4-fab8-42d7-a914-82c428b8dc94.png",
     title: "Luxury Gold & Black Set",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -190,7 +190,7 @@ const galleryItems = [
   },
   {
     id: 24,
-    image: "public/lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png",
+    image: "lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png",
     title: "Yellow Tips with Pearls",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -198,7 +198,7 @@ const galleryItems = [
   },
   {
     id: 25,
-    image: "public/lovable-uploads/52077b51-5170-435c-b22a-a9e06be8409f.png",
+    image: "lovable-uploads/52077b51-5170-435c-b22a-a9e06be8409f.png",
     title: "Orange French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -206,7 +206,7 @@ const galleryItems = [
   },
   {
     id: 26,
-    image: "public/lovable-uploads/2a5f685f-6134-4b2d-8362-01c0c7f0a6c4.png",
+    image: "lovable-uploads/2a5f685f-6134-4b2d-8362-01c0c7f0a6c4.png",
     title: "White with Cannabis Design",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -214,7 +214,7 @@ const galleryItems = [
   },
   {
     id: 27,
-    image: "public/lovable-uploads/a6ed1bfd-0848-4be9-b8dd-eb651e7be5fc.png",
+    image: "lovable-uploads/a6ed1bfd-0848-4be9-b8dd-eb651e7be5fc.png",
     title: "Blue French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -222,7 +222,7 @@ const galleryItems = [
   },
   {
     id: 28,
-    image: "public/lovable-uploads/d3dcf1cd-2f40-41da-b626-04f22f196bac.png",
+    image: "lovable-uploads/d3dcf1cd-2f40-41da-b626-04f22f196bac.png",
     title: "Jade Green Marble Effect",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -230,7 +230,7 @@ const galleryItems = [
   },
   {
     id: 29,
-    image: "public/lovable-uploads/dfc9381f-8ed4-4b0c-a046-24b2f6445075.png",
+    image: "lovable-uploads/dfc9381f-8ed4-4b0c-a046-24b2f6445075.png",
     title: "Red Flower Design",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -238,7 +238,7 @@ const galleryItems = [
   },
   {
     id: 30,
-    image: "public/lovable-uploads/697c2fb4-52f6-486a-b9fb-e082c7192761.png",
+    image: "lovable-uploads/697c2fb4-52f6-486a-b9fb-e082c7192761.png",
     title: "Colorful Summer Design",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -246,7 +246,7 @@ const galleryItems = [
   },
   {
     id: 31,
-    image: "public/lovable-uploads/cb3e1310-baf4-46ed-b401-ff2bb96bde5e.png",
+    image: "lovable-uploads/cb3e1310-baf4-46ed-b401-ff2bb96bde5e.png",
     title: "Almond-Shaped Pink Nails",
     tags: [],
     aspectRatio: "portrait" as const,
@@ -261,7 +261,7 @@ const GalleryPage = () => {
       <div className="relative bg-black h-72 md:h-96 flex items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="public/lovable-uploads/85d06358-eb2c-4c24-8f55-2b5bc9f54adb.png" 
+            src="lovable-uploads/85d06358-eb2c-4c24-8f55-2b5bc9f54adb.png" 
             alt="Nail Art Gallery" 
             className="w-full h-full object-cover opacity-30"
           />
