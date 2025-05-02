@@ -13,6 +13,9 @@ import GalleryPage from "./pages/GalleryPage";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
+import PressOnsGallery from "./pages/PressOnsGallery";
+import AcrylicsGallery from "./pages/AcrylicsGallery";
+import BiogelGallery from "./pages/BiogelGallery";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +31,9 @@ const App = () => (
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/gallery/press-ons" element={<PressOnsGallery />} />
+              <Route path="/gallery/acrylics" element={<AcrylicsGallery />} />
+              <Route path="/gallery/biogel" element={<BiogelGallery />} />
               <Route path="/pricing" element={<PricingPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="*" element={<NotFound />} />
