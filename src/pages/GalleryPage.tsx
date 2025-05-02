@@ -255,7 +255,7 @@ const galleryItems = [
   {
     id: 32,
     image: "add1.JPEG",
-    title: "Intense Red Flower Design",
+    title: "Yellow Frenchies with Pink Flowers",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -263,7 +263,7 @@ const galleryItems = [
 {
     id: 33,
     image: "add2.JPEG",
-    title: "Intense Red Flower Design",
+    title: "Designer with Gold Accents",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -271,7 +271,7 @@ const galleryItems = [
 {
     id: 34,
     image: "add3.JPEG",
-    title: "Intense Red Flower Design",
+    title: "Blue Design with Gold Accents",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
