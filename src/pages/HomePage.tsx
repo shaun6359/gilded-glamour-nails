@@ -31,7 +31,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img
-                src="lovable-uploads/85d06358-eb2c-4c24-8f55-2b5bc9f54adb.png"
+                src="lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png"
                 alt="Nail Artist at Work"
                 className="rounded-lg shadow-lg border border-gold/20"
               />
