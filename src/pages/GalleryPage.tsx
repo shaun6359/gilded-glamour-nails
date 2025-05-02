@@ -252,6 +252,30 @@ const galleryItems = [
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
   }
+  {
+    id: 32,
+    image: "add1.JPEG",
+    title: "Intense Red Flower Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  }
+{
+    id: 33,
+    image: "add2.JPEG",
+    title: "Intense Red Flower Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  }
+{
+    id: 34,
+    image: "add3.JPEG",
+    title: "Intense Red Flower Design",
+    tags: [],
+    aspectRatio: "portrait" as const,
+    type: "Press-On" as const
+  }
 ];
 
 const GalleryPage = () => {
