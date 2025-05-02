@@ -97,7 +97,7 @@ const ContactPage = () => {
               <div className="bg-[#0a0a0a] p-6 rounded-lg">
                 <h3 className="text-lg font-montserrat font-medium mb-2 text-gold">How long do appointments typically take?</h3>
                 <p className="text-gray-400">
-                  Appointments can range from 1.5-3 hours depending on the service and complexity of design.
+                  Appointments can range from 2-4+ hours depending on the service and complexity of design.
                   We'll provide a time estimate when booking.
                 </p>
               </div>
