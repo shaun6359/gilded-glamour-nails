@@ -41,7 +41,7 @@ const HomePage = () => {
             <div className="md:w-1/2">
               <h2 className="section-title">About Polish Me Pretty</h2>
               <p className="mt-6 text-gray-400 leading-relaxed">
-                Polish Me Pretty was founded with a passion for creativity and a dedication to quality. Our mission is to transform your nails into wearable art that expresses your unique personality and style.
+                Polish Me Pretty was created with a passion for creativity and a dedication to quality. Our mission is to transform your nails into wearable art that expresses your unique personality and style.
               </p>
               <p className="mt-4 text-gray-400 leading-relaxed">
                 Each design is meticulously crafted with premium products and attention to detail. Whether you're looking for elegant acrylics, long-lasting biogel, or custom press-ons to wear at home, we're committed to delivering nail designs that make you feel confident and beautiful.
@@ -65,7 +65,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ServiceCard title="Press Ons" description="Custom designed press-on nails for an instant, salon-quality manicure at home." image="lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png" link="/gallery" />
             <ServiceCard title="Acrylics" description="Durable and versatile acrylic enhancements for a perfect, long-lasting manicure." image="lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png" link="/gallery" />
-            <ServiceCard title="Biogel" description="Gentle on your natural nails with a glossy finish that lasts for weeks." image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" link="/gallery" />
+            <ServiceCard title="Biogel" description="Gentle on your nails with a natural finish that lasts for weeks." image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" link="/gallery" />
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ const HomePage = () => {
           
           <div className="text-center mt-12">
             <Button asChild>
-              <Link to="/gallery/press-ons">View Full Gallery</Link>
+              <Link to="/gallery">View Full Gallery</Link>
             </Button>
           </div>
         </div>
