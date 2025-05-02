@@ -178,7 +178,6 @@ const PricingPage = () => {
               <h3 className="text-xl font-montserrat font-medium mb-3 text-gold">Important Notes</h3>
               <ul className="space-y-3 text-gray-300 list-disc pl-5">
                 <li>Prices may vary based on specific design complexity</li>
-                <li>A 50% deposit is required to secure your appointment</li>
                 <li>Please provide at least 24 hours notice for cancellations</li>
                 <li>Late arrivals (15+ minutes) may result in rescheduling</li>
               </ul>
