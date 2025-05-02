@@ -1,42 +1,23 @@
 import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-black border-t border-[#d8b74b]/30 pt-12 pb-6">
+  return <footer className="bg-black border-t border-[#d8b74b]/30 pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" className="mb-4">
-              <img 
-                src="/lovable-uploads/373d1555-07f0-4a76-9a36-233a03cba102.png" 
-                alt="Polish Me Pretty" 
-                className="h-8"
-              />
+              <img src="/lovable-uploads/373d1555-07f0-4a76-9a36-233a03cba102.png" alt="Polish Me Pretty" className="h-8" />
             </Link>
             <p className="text-sm text-gray-400 text-center md:text-left">
               Elevating your nail game with luxurious, custom designs that make a statement.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a 
-                href="https://www.instagram.com/polishmepretty007/?utm_source=qr" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#d8b74b] transition-colors"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/polishmepretty007/?utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#d8b74b] transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a 
-                href="https://www.tiktok.com/@polishmepretty007" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#d8b74b] transition-colors"
-                aria-label="TikTok"
-              >
+              <a href="https://www.tiktok.com/@polishmepretty007" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#d8b74b] transition-colors" aria-label="TikTok">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
                 </svg>
@@ -54,19 +35,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/gallery/press-ons" className="text-gray-400 hover:text-gold transition-colors text-sm">
-                  Press Ons Gallery
-                </Link>
+                
               </li>
+              
               <li>
-                <Link to="/gallery/acrylics" className="text-gray-400 hover:text-gold transition-colors text-sm">
-                  Acrylics Gallery
-                </Link>
-              </li>
-              <li>
-                <Link to="/gallery/biogel" className="text-gray-400 hover:text-gold transition-colors text-sm">
-                  Biogel Gallery
-                </Link>
+                <Link to="/gallery/biogel" className="text-gray-400 hover:text-gold transition-colors text-sm">Gallery</Link>
               </li>
               <li>
                 <Link to="/pricing" className="text-gray-400 hover:text-gold transition-colors text-sm">
@@ -97,8 +70,6 @@ const Footer = () => {
           <p>© {currentYear} Polish Me Pretty. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
