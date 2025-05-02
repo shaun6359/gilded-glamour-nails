@@ -1,12 +1,21 @@
-
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import { Button } from "@/components/ui/button";
-
-const ServiceCard = ({ title, description, image, link }: { title: string, description: string, image: string, link: string }) => {
-  return (
-    <div className="group relative overflow-hidden rounded-lg">
-      <div className="w-full h-64 bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}>
+const ServiceCard = ({
+  title,
+  description,
+  image,
+  link
+}: {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}) => {
+  return <div className="group relative overflow-hidden rounded-lg">
+      <div className="w-full h-64 bg-cover bg-center" style={{
+      backgroundImage: `url(${image})`
+    }}>
         <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
       </div>
       <div className="absolute inset-0 flex flex-col justify-end p-6">
@@ -16,13 +25,10 @@ const ServiceCard = ({ title, description, image, link }: { title: string, descr
           <Link to={link}>View More</Link>
         </Button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 const HomePage = () => {
-  return (
-    <>
+  return <>
       <Hero />
       
       {/* About Section */}
@@ -30,11 +36,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <img
-                src="lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png"
-                alt="Nail Artist at Work"
-                className="rounded-lg shadow-lg border border-gold/20"
-              />
+              <img alt="Nail Artist at Work" className="rounded-lg shadow-lg border border-gold/20" src="/lovable-uploads/c8789341-c1ac-4d3a-beb0-d609ebf561c5.png" />
             </div>
             <div className="md:w-1/2">
               <h2 className="section-title">About Polish Me Pretty</h2>
@@ -61,24 +63,9 @@ const HomePage = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard
-              title="Press Ons"
-              description="Custom designed press-on nails for an instant, salon-quality manicure at home."
-              image="lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png"
-              link="/gallery"
-            />
-            <ServiceCard
-              title="Acrylics"
-              description="Durable and versatile acrylic enhancements for a perfect, long-lasting manicure."
-              image="lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png"
-              link="/gallery"
-            />
-            <ServiceCard
-              title="Biogel"
-              description="Gentle on your natural nails with a glossy finish that lasts for weeks."
-              image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png"
-              link="/gallery"
-            />
+            <ServiceCard title="Press Ons" description="Custom designed press-on nails for an instant, salon-quality manicure at home." image="lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png" link="/gallery" />
+            <ServiceCard title="Acrylics" description="Durable and versatile acrylic enhancements for a perfect, long-lasting manicure." image="lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png" link="/gallery" />
+            <ServiceCard title="Biogel" description="Gentle on your natural nails with a glossy finish that lasts for weeks." image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" link="/gallery" />
           </div>
         </div>
       </section>
@@ -123,8 +110,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default HomePage;
