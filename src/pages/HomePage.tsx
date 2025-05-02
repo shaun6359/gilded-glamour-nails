@@ -64,7 +64,7 @@ const HomePage = () => {
             <ServiceCard
               title="Press Ons"
               description="Custom designed press-on nails for an instant, salon-quality manicure at home."
-              image="lovable-uploads/afa4fc3a-4fab-4213-a192-be1f25989429.png"
+              image="lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png"
               link="/gallery/press-ons"
             />
             <ServiceCard
@@ -76,7 +76,7 @@ const HomePage = () => {
             <ServiceCard
               title="Biogel"
               description="Gentle on your natural nails with a glossy finish that lasts for weeks."
-              image="lovable-uploads/939ace81-db72-4834-bd5e-84cb550471ef.png"
+              image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png"
               link="/gallery/biogel"
             />
           </div>
