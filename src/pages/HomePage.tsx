@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import { Button } from "@/components/ui/button";
@@ -30,7 +31,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <img
-                src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop"
+                src="public/lovable-uploads/85d06358-eb2c-4c24-8f55-2b5bc9f54adb.png"
                 alt="Nail Artist at Work"
                 className="rounded-lg shadow-lg border border-gold/20"
               />
@@ -63,19 +64,19 @@ const HomePage = () => {
             <ServiceCard
               title="Press Ons"
               description="Custom designed press-on nails for an instant, salon-quality manicure at home."
-              image="https://images.unsplash.com/photo-1636018942549-d84835d0b2fc?q=80&w=2071&auto=format&fit=crop"
+              image="public/lovable-uploads/afa4fc3a-4fab-4213-a192-be1f25989429.png"
               link="/gallery/press-ons"
             />
             <ServiceCard
               title="Acrylics"
               description="Durable and versatile acrylic enhancements for a perfect, long-lasting manicure."
-              image="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1975&auto=format&fit=crop"
+              image="public/lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png"
               link="/gallery/acrylics"
             />
             <ServiceCard
               title="Biogel"
               description="Gentle on your natural nails with a glossy finish that lasts for weeks."
-              image="https://images.unsplash.com/photo-1612022346090-d8e185fb1d58?q=80&w=2067&auto=format&fit=crop"
+              image="public/lovable-uploads/939ace81-db72-4834-bd5e-84cb550471ef.png"
               link="/gallery/biogel"
             />
           </div>
@@ -91,10 +92,10 @@ const HomePage = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=1974&auto=format&fit=crop" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="https://images.unsplash.com/photo-1604902369280-1a77244f68a3?q=80&w=1974&auto=format&fit=crop" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="https://images.unsplash.com/photo-1583255448430-17c5eda08e5c?q=80&w=2070&auto=format&fit=crop" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="public/lovable-uploads/7b2dc5da-6439-495d-8c65-628ce8bfcb11.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="public/lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="public/lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="public/lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
           </div>
           
           <div className="text-center mt-12">
