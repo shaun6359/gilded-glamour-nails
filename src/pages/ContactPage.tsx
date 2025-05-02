@@ -39,7 +39,6 @@ const ContactPage = () => {
                   <ol className="space-y-3 text-gray-300 list-decimal pl-5">
                     <li>Submit your inquiry through our contact form or social media</li>
                     <li>We'll reach out to discuss your preferences and schedule</li>
-                    <li>Once details are confirmed, a 50% deposit secures your appointment</li>
                     <li>Arrive at your scheduled time ready for your glamorous new nails</li>
                   </ol>
                 </div>
