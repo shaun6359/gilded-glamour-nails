@@ -10,7 +10,7 @@ const allGalleryItems = [
     title: "Classic French Tips",
     tags: ["French", "Short", "Elegant", "Press-On"],
     aspectRatio: "portrait" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const allGalleryItems = [
     title: "Gold Glitter Accent",
     tags: ["Glitter", "Medium", "Statement", "Press-On"],
     aspectRatio: "landscape" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const allGalleryItems = [
     title: "Pink Marble",
     tags: ["Marble", "Long", "Trendy", "Press-On"],
     aspectRatio: "square" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const allGalleryItems = [
     title: "Matte Black",
     tags: ["Matte", "Medium", "Bold", "Press-On"],
     aspectRatio: "landscape" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const allGalleryItems = [
     title: "Rose Gold Foil",
     tags: ["Foil", "Medium", "Luxury", "Press-On"],
     aspectRatio: "portrait" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const allGalleryItems = [
     title: "White Minimalist",
     tags: ["Minimalist", "Short", "Clean", "Press-On"],
     aspectRatio: "square" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 7,
@@ -58,7 +58,7 @@ const allGalleryItems = [
     title: "Red Classic",
     tags: ["Red", "Long", "Timeless", "Press-On"],
     aspectRatio: "portrait" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 8,
@@ -66,7 +66,7 @@ const allGalleryItems = [
     title: "Pastel Dreams",
     tags: ["Pastel", "Medium", "Subtle", "Press-On"],
     aspectRatio: "landscape" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   {
     id: 9,
@@ -74,7 +74,7 @@ const allGalleryItems = [
     title: "Nude Elegance",
     tags: ["Nude", "Almond", "Sophisticated", "Press-On"],
     aspectRatio: "square" as const,
-    type: "Press-On"
+    type: "Press-On" as const
   },
   
   // Acrylics Gallery
@@ -84,7 +84,7 @@ const allGalleryItems = [
     title: "Crystal Clear",
     tags: ["Clear", "Long", "Modern", "Acrylic"],
     aspectRatio: "landscape" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 11,
@@ -92,7 +92,7 @@ const allGalleryItems = [
     title: "Blue Ocean",
     tags: ["Blue", "Medium", "Gradient", "Acrylic"],
     aspectRatio: "portrait" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 12,
@@ -100,7 +100,7 @@ const allGalleryItems = [
     title: "French XL",
     tags: ["French", "XL", "Classic", "Acrylic"],
     aspectRatio: "square" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 13,
@@ -108,7 +108,7 @@ const allGalleryItems = [
     title: "Glossy Red",
     tags: ["Red", "Almond", "Glossy", "Acrylic"],
     aspectRatio: "landscape" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 14,
@@ -116,7 +116,7 @@ const allGalleryItems = [
     title: "Marble & Gold",
     tags: ["Marble", "Gold", "Long", "Acrylic"],
     aspectRatio: "portrait" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 15,
@@ -124,7 +124,7 @@ const allGalleryItems = [
     title: "Classic Burgundy",
     tags: ["Burgundy", "Medium", "Elegant", "Acrylic"],
     aspectRatio: "square" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 16,
@@ -132,7 +132,7 @@ const allGalleryItems = [
     title: "Stiletto Black",
     tags: ["Black", "Stiletto", "Edgy", "Acrylic"],
     aspectRatio: "portrait" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 17,
@@ -140,7 +140,7 @@ const allGalleryItems = [
     title: "Ombré Fantasy",
     tags: ["Ombré", "Long", "Statement", "Acrylic"],
     aspectRatio: "landscape" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   {
     id: 18,
@@ -148,7 +148,7 @@ const allGalleryItems = [
     title: "Crystal Accents",
     tags: ["Crystals", "XL", "Luxury", "Acrylic"],
     aspectRatio: "square" as const,
-    type: "Acrylic"
+    type: "Acrylic" as const
   },
   
   // Biogel Gallery
@@ -158,7 +158,7 @@ const allGalleryItems = [
     title: "Natural Pink",
     tags: ["Pink", "Natural", "Short", "Biogel"],
     aspectRatio: "portrait" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 20,
@@ -166,7 +166,7 @@ const allGalleryItems = [
     title: "Glossy White",
     tags: ["White", "Glossy", "Medium", "Biogel"],
     aspectRatio: "landscape" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 21,
@@ -174,7 +174,7 @@ const allGalleryItems = [
     title: "Baby Blue",
     tags: ["Blue", "Pastel", "Medium", "Biogel"],
     aspectRatio: "square" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 22,
@@ -182,7 +182,7 @@ const allGalleryItems = [
     title: "French Twist",
     tags: ["French", "Classic", "Short", "Biogel"],
     aspectRatio: "landscape" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 23,
@@ -190,7 +190,7 @@ const allGalleryItems = [
     title: "Subtle Shimmer",
     tags: ["Shimmer", "Elegant", "Neutral", "Biogel"],
     aspectRatio: "portrait" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 24,
@@ -198,7 +198,7 @@ const allGalleryItems = [
     title: "Nude Perfection",
     tags: ["Nude", "Minimalist", "Professional", "Biogel"],
     aspectRatio: "square" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 25,
@@ -206,7 +206,7 @@ const allGalleryItems = [
     title: "Dusty Rose",
     tags: ["Rose", "Medium", "Matte", "Biogel"],
     aspectRatio: "portrait" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 26,
@@ -214,7 +214,7 @@ const allGalleryItems = [
     title: "Soft Lavender",
     tags: ["Lavender", "Short", "Pastel", "Biogel"],
     aspectRatio: "landscape" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   },
   {
     id: 27,
@@ -222,7 +222,7 @@ const allGalleryItems = [
     title: "Clear Builder",
     tags: ["Clear", "Natural", "Strengthening", "Biogel"],
     aspectRatio: "square" as const,
-    type: "Biogel"
+    type: "Biogel" as const
   }
 ];
 
