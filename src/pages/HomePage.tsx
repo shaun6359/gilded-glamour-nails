@@ -92,10 +92,10 @@ const HomePage = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="lovable-uploads/7b2dc5da-6439-495d-8c65-628ce8bfcb11.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="lovable-uploads/9f9c1a8b-c36d-454f-bfbd-eb025aaab44f.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
             <img src="lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
             <img src="lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
-            <img src="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
+            <img src="lovable-uploads/cb3e1310-baf4-46ed-b401-ff2bb96bde5e.png" alt="Nail Design" className="w-full h-64 object-cover rounded-md hover:opacity-90 transition-opacity" />
           </div>
           
           <div className="text-center mt-12">
