@@ -86,7 +86,7 @@ const galleryItems = [
   {
     id: 11,
     image: "lovable-uploads/2ab2a643-5df0-428a-8866-c626f77d6d92.png",
-    title: "Pink and Gold Accent",
+    title: "Pink and Blue Floral",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -102,7 +102,7 @@ const galleryItems = [
   {
     id: 13,
     image: "lovable-uploads/85ab2f2a-776e-4a49-bc75-d94144f8085d.png",
-    title: "Pastel Green Floral",
+    title: "Pastel Abstract Design",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -110,7 +110,7 @@ const galleryItems = [
   {
     id: 14,
     image: "lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png",
-    title: "White French Tips",
+    title: "French and Flowers",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -191,7 +191,7 @@ const galleryItems = [
   {
     id: 24,
     image: "lovable-uploads/14dd5c8b-36d9-4469-a392-252d17a39439.png",
-    title: "Yellow Tips with Pearls",
+    title: "French with Gold Accents",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -199,7 +199,7 @@ const galleryItems = [
   {
     id: 25,
     image: "lovable-uploads/52077b51-5170-435c-b22a-a9e06be8409f.png",
-    title: "Orange French Tips",
+    title: "Colorful Summer Design",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -207,7 +207,7 @@ const galleryItems = [
   {
     id: 26,
     image: "lovable-uploads/2a5f685f-6134-4b2d-8362-01c0c7f0a6c4.png",
-    title: "White with Cannabis Design",
+    title: "Natural",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -215,7 +215,7 @@ const galleryItems = [
   {
     id: 27,
     image: "lovable-uploads/a6ed1bfd-0848-4be9-b8dd-eb651e7be5fc.png",
-    title: "Blue French Tips",
+    title: "Orange French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -223,7 +223,7 @@ const galleryItems = [
   {
     id: 28,
     image: "lovable-uploads/d3dcf1cd-2f40-41da-b626-04f22f196bac.png",
-    title: "Jade Green Marble Effect",
+    title: "White Snow Design",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Acrylic" as const
@@ -231,7 +231,7 @@ const galleryItems = [
   {
     id: 29,
     image: "lovable-uploads/dfc9381f-8ed4-4b0c-a046-24b2f6445075.png",
-    title: "Red Flower Design",
+    title: "Blue French Tips",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -239,7 +239,7 @@ const galleryItems = [
   {
     id: 30,
     image: "lovable-uploads/697c2fb4-52f6-486a-b9fb-e082c7192761.png",
-    title: "Colorful Summer Design",
+    title: "French Tips with Marbling",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
@@ -247,7 +247,7 @@ const galleryItems = [
   {
     id: 31,
     image: "lovable-uploads/cb3e1310-baf4-46ed-b401-ff2bb96bde5e.png",
-    title: "Almond-Shaped Pink Nails",
+    title: "Intense Red Flower Design",
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
