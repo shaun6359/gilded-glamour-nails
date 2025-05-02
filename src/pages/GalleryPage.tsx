@@ -251,7 +251,7 @@ const galleryItems = [
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
-  }
+  },
   {
     id: 32,
     image: "add1.JPEG",
@@ -259,7 +259,7 @@ const galleryItems = [
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
-  }
+  },
 {
     id: 33,
     image: "add2.JPEG",
@@ -267,7 +267,7 @@ const galleryItems = [
     tags: [],
     aspectRatio: "portrait" as const,
     type: "Press-On" as const
-  }
+  },
 {
     id: 34,
     image: "add3.JPEG",
