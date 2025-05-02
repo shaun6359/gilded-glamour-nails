@@ -65,7 +65,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ServiceCard title="Press Ons" description="Custom designed press-on nails for an instant, salon-quality manicure at home." image="lovable-uploads/56055f5f-62f5-4213-936d-8a3d1beadc2c.png" link="/gallery" />
             <ServiceCard title="Acrylics" description="Durable and versatile acrylic enhancements for a perfect, long-lasting manicure." image="lovable-uploads/f946b9c2-95d8-44b8-903e-1612e71410e6.png" link="/gallery" />
-            <ServiceCard title="Biogel" description="Gentle on your nails with a natural finish that lasts for weeks." image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" link="/gallery" />
+            <ServiceCard title="Biogel" description="Gentle on your nail beds with a natural finish that lasts for weeks." image="lovable-uploads/9c75b39b-e5bb-4a8d-b1a5-9ce3ce35b6d8.png" link="/gallery" />
           </div>
         </div>
       </section>
