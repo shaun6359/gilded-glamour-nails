@@ -1,4 +1,3 @@
-
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -24,7 +23,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
 // EmailJS configuration
-const EMAILJS_SERVICE_ID = "service_Imy2yfd"; // Make sure this EXACTLY matches your EmailJS service ID
+const EMAILJS_SERVICE_ID = "service_lmy2yfd"; // Updated to lowercase l instead of uppercase I
 const EMAILJS_TEMPLATE_ID = "template_x4r5g9l";
 const EMAILJS_PUBLIC_KEY = "zh9rtUra2gAe290w1";
 
@@ -214,4 +213,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
