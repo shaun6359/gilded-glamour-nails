@@ -24,7 +24,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
 // EmailJS configuration
-const EMAILJS_SERVICE_ID = "service_Imy2yfd";
+const EMAILJS_SERVICE_ID = "service_Imy2yfd"; // Make sure this EXACTLY matches your EmailJS service ID
 const EMAILJS_TEMPLATE_ID = "template_x4r5g9l";
 const EMAILJS_PUBLIC_KEY = "zh9rtUra2gAe290w1";
 
@@ -74,6 +74,10 @@ const ContactForm = () => {
         message: values.message,
       };
       
+      console.log("Sending email with params:", templateParams);
+      console.log("Using service ID:", EMAILJS_SERVICE_ID);
+      console.log("Using template ID:", EMAILJS_TEMPLATE_ID);
+      
       // Send the email
       const response = await emailjs.send(
         EMAILJS_SERVICE_ID,
@@ -94,7 +98,7 @@ const ContactForm = () => {
       console.error("Error sending email:", error);
       toast({
         title: "Error sending message",
-        description: "There was a problem sending your message. Please try again later.",
+        description: "There was a problem sending your message. Please try again later or contact us through Instagram.",
         variant: "destructive",
       });
     } finally {
@@ -210,3 +214,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
