@@ -21,6 +21,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+
+// EmailJS configuration
+const EMAILJS_SERVICE_ID = "service_Imy2yfd";
+const EMAILJS_TEMPLATE_ID = "template_x4r5g9l";
+const EMAILJS_PUBLIC_KEY = "zh9rtUra2gAe290w1";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -36,6 +42,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -48,17 +55,51 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: FormValues) {
-    // In a real application, this would connect to your backend or email service
-    console.log(values);
-    
-    toast({
-      title: "Form submitted!",
-      description: "We'll get back to you as soon as possible.",
-    });
-    
-    // Reset the form
-    form.reset();
+  async function onSubmit(values: FormValues) {
+    setIsSubmitting(true);
+
+    try {
+      // Import emailjs dynamically to prevent SSR issues
+      const emailjs = await import('@emailjs/browser');
+      
+      // Initialize emailjs with your public key
+      emailjs.init(EMAILJS_PUBLIC_KEY);
+      
+      // Prepare template parameters to match your EmailJS template variables
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        from_instagram: values.instagramHandle || "Not provided",
+        from_inquiry_type: values.inquiryType,
+        message: values.message,
+      };
+      
+      // Send the email
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams
+      );
+      
+      console.log("Email sent successfully:", response.status, response.text);
+      
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+      
+      // Reset the form
+      form.reset();
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error sending message",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -159,8 +200,8 @@ const ContactForm = () => {
             )}
           />
           
-          <Button type="submit" className="w-full">
-            Submit
+          <Button type="submit" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Submit"}
           </Button>
         </form>
       </Form>
